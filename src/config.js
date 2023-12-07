@@ -5,9 +5,11 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
+const namePrefix = "Beauty Inside";
+const description =
+  "I don't care what you look like, because whatever you look like is who you are";
+const baseUri =
+  "https://blush-leading-dolphin-31.mypinata.cloud/ipfs/QmXVunkLvKsH9b9yTvyBxuURP1ye5ve2n3q3aH7R6iVZLN";
 
 const solanaMetadata = {
   symbol: "YC",
@@ -24,15 +26,13 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 10,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Eyes" },
+      { name: "Nose" },
+      { name: "Mouth" },
+      { name: "Ears" },
     ],
   },
 ];
